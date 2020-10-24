@@ -1,0 +1,606 @@
+
+from tkinter import *
+from tkinter import messagebox
+from tkinter import Image
+from tkinter import ttk
+
+
+
+
+   
+
+def mayank():
+    top = Toplevel()
+    top.title("details ")
+    top.geometry("1250x850")
+   
+    top.configure(background="gray75")
+    m=Label(top,text='  Sage University  ',font=("times new roman",25,"bold"),fg="red",bg="yellow")
+    m.pack(side="top",padx=0,pady=5,fil="both")
+    m=Label(top,text='By-- B.Tech(IT),4th sem,  ',font=("times new roman",15,"bold"),fg="red",bg="gray75")
+    m.pack(side="top",padx=0,pady=5)
+
+
+    m56=Label(top,text='Name-Mayank tamrkar',font=("times new roman",15,"bold"),fg="red",bg="gray75").pack(side="top",padx=0,pady=15)
+    m57=Label(top,text='Mritumjay Sharma',font=("times new roman",15,"bold"),fg="red",bg="gray75").pack(side="top",padx=0,pady=15)
+    m58=Label(top,text='Anand Kushawah',font=("times new roman",15,"bold"),fg="red",bg="gray75").pack(side="top",padx=0,pady=15)
+    m59=Label(top,text='Durgesh choursiya',font=("times new roman",15,"bold"),fg="red",bg="gray75").pack(side="top",padx=0,pady=15)
+    m34=Label(top,text=' Babita mandloi ',font=("times new roman",15,"bold"),fg="red",bg="gray75").pack(side="top",padx=0,pady=15)
+    #m25=Label(top,text='Name-Mayank tamrkar',font=("times new roman",15,"bold"),fg="red",bg="gray75").pack(side="top",padx=0,pady=5)
+    b1 = Button(top,text="[****** Exit *****]",font=("times new roman",16),fg="red",command=action)
+    b1.pack(padx=15,pady=15) 
+      
+  
+    
+
+    
+    
+
+def details():
+    top = Toplevel()
+    top.title("details ")
+    top.geometry("1250x850")
+    m23=Label(top,text= '[  customer details ]',font=("times new roman",25,"bold"),fg="red",bg="yellow").pack(padx=35,pady=35,fill="both")
+    m=Label(top,text=' [name- ****************************]',font=("times new roman",20),fg="green",bg="peach puff2").pack(padx=25,pady=25)
+    m1=Label(top,text='[Address- *************************]',font=("times new roman",20),fg="green",bg="peach puff2").pack(padx=25,pady=25)
+    m2=Label(top,text='[Payament type- *******************]',font=("times new roman",20),fg="green",bg="peach puff2").pack(padx=25,pady=25)
+    m3=Label(top,text='[Qunties- *************************]',font=("times new roman",20),fg="green",bg="peach puff2").pack(padx=25,pady=25)
+    m4=Label(top,text='[phone no.- ***********************]',font=("times new roman",20),fg="green",bg="peach puff2").pack(padx=25,pady=25)
+    b1 = Button(top,text="[****** Done *****]",font=("times new roman",16),fg="red",command=mayank1)
+    b1.pack(padx=15,pady=15)
+    top.configure(background="peach puff2")
+    m=Label(top,text='Name-Mayank tamrkar,Mritumjay Sharma,Anand Kushawah,Durgesh choursiya,Babita mandloi ',font=("times new roman",12,"bold"),fg="red",bg="peach puff2")
+    m.pack(side="bottom",padx=0,pady=5)
+
+    m=Label(top,text='By-- B.Tech(IT),4th sem,  ',font=("times new roman",12,"bold"),fg="red",bg="peach puff2")
+    m.pack(side="bottom",padx=0,pady=15)
+    
+
+
+
+######1111111111###########buyyer##################
+
+
+def ddd():
+    top = Toplevel()
+    top.title("product ")
+    
+    
+    nb=ttk.Notebook(top)
+    page1=ttk.Frame(nb)
+    page2=ttk.Frame(nb)
+    
+    
+
+    nb.add(page1,text='seller')
+    nb.add(page2,text='buyyer')
+
+    nb.pack(expand=True,fill='both')
+    
+    m23=Label(page1,text= '[  customers names  ]',font=("times new roman",25,"bold"),fg="red",bg="yellow").pack(padx=15,pady=15,fill="both")
+    button1 = Button(page1,text="[ **customer1** ]",font=("times new roman",16),fg="green",command=seller, bg="powder blue",cursor='circle',relief = SUNKEN)
+    button1.pack(padx=10,pady=10)
+    button2 = Button(page1,text="[ **customer2** ]",font=("times new roman",16),fg="red",command=seller, bg="powder blue",cursor='circle',relief = SUNKEN)
+    button2.pack(padx=10,pady=10)
+    button1 = Button(page1,text="[ **customer3** ]",font=("times new roman",16),fg="green",command=seller, bg="powder blue",cursor='circle',relief = SUNKEN)
+    button1.pack(padx=10,pady=10)
+    button2 = Button(page1,text="[ **customer4** ]",font=("times new roman",16),fg="red",command=seller, bg="powder blue",cursor='circle',relief = SUNKEN)
+    button2.pack(padx=10,pady=10)
+    button1 = Button(page1,text="[ **customer5** ]",font=("times new roman",16),fg="green",command=seller, bg="powder blue",cursor='circle',relief = SUNKEN)
+    button1.pack(padx=10,pady=10)
+    button2 = Button(page1,text="[ **customer6** ]",font=("times new roman",16),fg="red",command=seller, bg="powder blue",cursor='circle',relief = SUNKEN)
+    button2.pack(padx=10,pady=10)
+    button1 = Button(page1,text="[ **customer7** ]",font=("times new roman",16),fg="green",command=seller, bg="powder blue",cursor='circle',relief = SUNKEN)
+    button1.pack(padx=10,pady=10)
+    button2 = Button(page1,text="[ **   Exit  ** ]",font=("times new roman",16),fg="red",command=action, bg="powder blue",cursor='circle',relief = SUNKEN)
+    button2.pack(padx=10,pady=10)
+
+    m23=Label(page2,text= '[  Farmers names  ]',font=("times new roman",25,"bold"),fg="red",bg="yellow").pack(padx=15,pady=15,fill="both")
+ 
+    button1 = Button(page2,text="[ **Farmer 1   ** ]",font=("times new roman",16),fg="green",command=seller, bg="dark sea green1")
+    button1.pack()
+    button2 = Button(page2,text="[ **Farmer 2   ** ]",font=("times new roman",16),fg="red",command=seller, bg="dark sea green1")
+    button2.pack(padx=10,pady=10)
+    button1 = Button(page2,text="[ **Farmer 3   ** ]",font=("times new roman",16),fg="green",command=seller, bg="dark sea green1")
+    button1.pack(padx=10,pady=10)
+    button2 = Button(page2,text="[ **Farmer 4   ** ]",font=("times new roman",16),fg="red",command=seller, bg="dark sea green1")
+    button2.pack(padx=10,pady=10)
+    button1 = Button(page2,text="[ **Farmer 5   ** ]",font=("times new roman",16),fg="green",command=seller, bg="dark sea green1")
+    button1.pack(padx=10,pady=10)
+    button2 = Button(page2,text="[ **Farmer 6   ** ]",font=("times new roman",16),fg="red",command=seller, bg="dark sea green1")
+    button2.pack(padx=10,pady=10)
+    button1 = Button(page2,text="[ **Farmer 7   ** ]",font=("times new roman",16),fg="green",command=seller, bg="dark sea green1")
+    button1.pack(padx=10,pady=10)
+   
+    button1 = Button(page2,text="[ **  Exit      **]",font=("times new roman",16),fg="green",command=action, bg="dark sea green1")
+    button1.pack(padx=10,pady=10)
+   
+    top.geometry("1250x850")   
+
+
+
+
+
+
+
+
+def buyyer():
+
+    top = Toplevel()
+    top.title("buyyyer")
+    top.geometry("1250x850")
+
+
+    button1 = Button(top,text="[Soyabean  ]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button1.grid(row=0,column=0,padx=50,pady=50)
+    button2 = Button(top,text="[  chana   ]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button2.grid(row=0,column=3,padx=50,pady=50)
+    button2 = Button(top,text="[  weat    ]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button2.grid(row=0,column=5,padx=50,pady=50)
+    button1 = Button(top,text="[  rice    ]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button1.grid(row=0,column=7,padx=50,pady=50)
+
+    
+    button2 = Button(top,text="[ Turdal   ] ",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button2.grid(row=2,column=0,padx=  50,pady=50)
+    button1 = Button(top,text="[Masoor dal]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button1.grid(row=2,column=3,padx=50,pady=50)
+    button2 = Button(top,text="[Moong dal ]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button2.grid(row=2,column=5,padx=50,pady=50)
+    button1 = Button(top,text="[ udad dal ]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button1.grid(row=2,column=7,padx=50,pady=50)
+
+    
+    button2 = Button(top,text="[ Baasmati ]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button2.grid(row=4,column=0,padx=  50,pady=50)
+    button1 = Button(top,text="[  Tukada  ]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button1.grid(row=4,column=3,padx=50,pady=50)
+    button2 = Button(top,text="[ long rice]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button2.grid(row=4,column=5,padx=50,pady=50)
+    button1 = Button(top,text="[pullav rice]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button1.grid(row=4,column=7,padx=50,pady=50)
+
+    
+    button2 = Button(top,text="[makka wheat]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button2.grid(row=6,column=0,padx=  50,pady=50)
+    button2 = Button(top,text="[jvar wheat ]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button2.grid(row=6,column=3,padx=50,pady=50)
+    button1 = Button(top,text="[bajare wheat]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button1.grid(row=6,column=5,padx=50,pady=50)
+    button2 = Button(top,text="[joo wheat  ]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button2.grid(row=6,column=7,padx=50,pady=50)
+    
+    button1 = Button(top,text="[    till   ]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button1.grid(row=8,column=0,padx=  50,pady=50)
+    button2 = Button(top,text="[    saraso ]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button2.grid(row=8,column=3,padx=50,pady=50)
+    button1 = Button(top,text="[    ganna  ]",font=("times new roman",16),fg="green",bg="light cyan",command=ddd)
+    button1.grid(row=8,column=5,padx=50,pady=50)
+    button2 = Button(top,text="[   dhaan   ]",font=("times new roman",16),fg="red",bg="light cyan",command=ddd)
+    button2.grid(row=8,column=7,padx=50,pady=50)
+
+
+    #gendervar=StringVar()
+    #gendercombobox = ttk.Combobox(top,width=33 ,textvariable = gendervar,state='readonly')
+   # gendercombobox.grid(row=9,column=4)
+    #gendercombobox['values']=('Buyyer','Seller')
+    
+   # gendercombobox.get()
+    button1 = Button(top,text="[home page ]",font=("times new roman",16),fg="green",bg="light cyan",command=action)
+    button1.grid(row=10,column=3,padx=50,pady=50)
+    button2 = Button(top,text="[ exit ]" ,font=("times new roman",16),fg="red",bg="light cyan",command=top.destroy)
+    button2.grid(row=10,column=5,padx=50,pady=50
+                 )
+    top.configure(background="plum2")
+    #button1 = Button(top,text="home page",font=("times new roman",16),fg="green",command=ddd)
+    #button1.grid(row=6,column=9)
+    
+   # button2 = Button(top,text="exit",font=("times new roman",16),fg="red",command=top.destroy)
+    #button2.grid(row=6,column=10)
+
+
+    
+    #####22222222222############seller###########
+def seller(event=''):
+    top = Toplevel()
+    top.title("seller")
+    top.geometry("1250x850")
+    m=Label(top,text=' [ ~~ Enter the Value ~~  ]',font=("times new roman",18,"bold"),fg="red",bg="yellow")
+    m.pack(padx=15,pady=25,fill="both")
+
+    namevar=StringVar()
+    nameentrybox=Entry(top,width=33,textvariable=namevar,fg="green")
+    nameentrybox.pack(padx=15,pady=15)
+
+    nameentrybox.focus()
+
+    m=Label(top,text=' [  Select qunties  ]',font=("times new roman",15,"bold"),fg="red",bg="light steel blue")
+    m.pack(padx=15,pady=25,fill="both")
+    gendervar=StringVar()
+    gendercombobox = ttk.Combobox(top,width=33 ,textvariable = gendervar,text="enter ",state='readonly')
+    gendercombobox.pack(padx=15,pady=15)
+    gendercombobox['values']=('KG','QUINTAL','TON')
+    
+    gendercombobox.get()
+    m=Label(top,text='[ ***  payment proccess ***]',font=("times new roman",15,"bold"),fg="green",bg="light steel blue")
+    m.pack(padx=15,pady=15)
+
+    gendervar1=StringVar()
+    gendercombobox1 = ttk.Combobox(top,width=33 ,textvariable = gendervar1,state='readonly')
+    gendercombobox1.pack(padx=15,pady=15)
+    gendercombobox1['values']=('Cash','Check','Online')
+    
+    gendercombobox1.get()
+    
+  
+    button1 = Button(top,text="[Get calint Details ]",font=("times new roman",16),fg="green",bg="light steel blue",command=details)
+    button1.pack(padx=15,pady=15)
+    button2 = Button(top,text="[****** exit*****]",font=("times new roman",16),fg="red",bg="light steel blue",command=top.destroy)
+    button2.pack(padx=15,pady=15)
+    #m=Label(top,text='ddddd')
+    #m.pack()
+    top.configure(background="light steel blue")
+    top.geometry("1250x850")
+    
+    
+   #######333333333##################check the price#################
+def check_the_price(event=''):
+    
+    top = Toplevel()
+    top.title("chec ")
+    top.geometry("1250x850")
+    
+    
+    
+    button1 = Button(top,text="[Soyabean - 30kg ]",font=("times new roman",16),fg="green",command=ddd)
+    button1.grid(row=0,column=0,padx=20,pady=50)
+    button2 = Button(top,text="[  chana - 40kg  ]",font=("times new roman",16),fg="red",command=ddd)
+    button2.grid(row=0,column=3)
+    button2 = Button(top,text="[  weat    -10kg ]",font=("times new roman",16),fg="green",command=ddd)
+    button2.grid(row=0,column=5)
+    button1 = Button(top,text="[  rice   -20kg  ]",font=("times new roman",16),fg="red",command=ddd)
+    button1.grid(row=0,column=7)
+
+    
+    button2 = Button(top,text="[ Turdal  -40kg  ] ",font=("times new roman",16),fg="green",command=ddd)
+    button2.grid(row=2,column=0,padx=  20,pady=50)
+    button1 = Button(top,text="[Masoor dal-50kg ]",font=("times new roman",16),fg="red",command=ddd)
+    button1.grid(row=2,column=3)
+    button2 = Button(top,text="[Moong dal- 40kg ]",font=("times new roman",16),fg="green",command=ddd)
+    button2.grid(row=2,column=5)
+    button1 = Button(top,text="[ udad dal-30kg  ]",font=("times new roman",16),fg="red",command=ddd)
+    button1.grid(row=2,column=7)
+
+    
+    button2 = Button(top,text="[ Baasmati  -50kg]",font=("times new roman",16),fg="green",command=ddd)
+    button2.grid(row=4,column=0,padx=  20,pady=50)
+    button1 = Button(top,text="[  Tukada -30kg  ]",font=("times new roman",16),fg="red",command=ddd)
+    button1.grid(row=4,column=3)
+    button2 = Button(top,text="[ long rice-60kg ]",font=("times new roman",16),fg="green",command=ddd)
+    button2.grid(row=4,column=5)
+    button1 = Button(top,text="[pullav rice-75kg]",font=("times new roman",16),fg="red",command=ddd)
+    button1.grid(row=4,column=7)
+
+    
+    button2 = Button(top,text="[makka wheat-15kg]",font=("times new roman",16),fg="green",command=ddd)
+    button2.grid(row=6,column=0,padx=  20,pady=50)
+    button2 = Button(top,text="[jvar wheat -20kg]",font=("times new roman",16),fg="red",command=ddd)
+    button2.grid(row=6,column=3)
+    button1 = Button(top,text="[bajarewheat-25kg]",font=("times new roman",16),fg="green",command=ddd)
+    button1.grid(row=6,column=5)
+    button2 = Button(top,text="[joo wheat -30kg ]",font=("times new roman",16),fg="red",command=ddd)
+    button2.grid(row=6,column=7)
+    
+    button1 = Button(top,text="[    till -35kg  ]",font=("times new roman",16),fg="green",command=ddd)
+    button1.grid(row=8,column=0,padx=  20,pady=50)
+    button2 = Button(top,text="[    saraso -60kg]",font=("times new roman",16),fg="red",command=ddd)
+    button2.grid(row=8,column=3)
+    button1 = Button(top,text="[    ganna -20kg ]",font=("times new roman",16),fg="green",command=ddd)
+    button1.grid(row=8,column=5)
+    button2 = Button(top,text="[   dhaan -30kg  ]",font=("times new roman",16),fg="red",command=ddd)
+    button2.grid(row=8,column=7)
+    button1 = Button(top,text="[    home page   ]",font=("times new roman",16),fg="green",command=action)
+    button1.grid(row=9,column=3)
+    button2 = Button(top,text="exit",font=("times new roman",16),fg="red",command=top.destroy)
+    button2.grid(row=9,column=5)
+    top.configure(background="gray65")
+#   combo box for gender
+    
+    
+    
+    ####################acion and homepage #####################
+def action(event=""):
+    top = Toplevel()
+    top.title("action")
+    top.geometry("1250x850")
+    uname=namevar.get()
+    upass=passvar.get()
+    ###############password##################
+    if uname=="1" or upass=="1":
+        messagebox.askokcancel("succes.. "," would like to enter??")
+        top = Toplevel()
+        top.title("home ")
+        top.configure(background="gray60")
+                    
+        top.geometry("1250x850")
+
+
+
+
+        
+        m=Label(top,text='[     Home page       ]',font=("times new roman",18,"bold"),fg="red",bg="yellow")
+        m.pack(padx=0,pady=8,fill="both")
+        
+
+       # btnrow1 = Frame(top)
+        #border=2,
+        #relief = GROOVE,
+        #background="light cyan",
+        #btnrow1.pack(fill = "both")
+        
+#
+ #       btnrow2 = Frame(top)
+  #      btnrow2.pack(expand = True, fill = "both")
+
+   #     btnrow3 = Frame(top)
+    #    btnrow3.pack(expand = True, fill = "both")
+
+
+
+        ##################### The buttons section############
+        class aa () :
+            btn1 = Button(
+            top,
+            text = "[      buyyer     ]",
+            font = ("Times new roman", 16),
+            relief = SUNKEN,
+
+            bg="thistle2",
+            border = 2,
+            command=buyyer,
+   
+            )
+            btn1.pack(padx=  20,pady=30)
+
+            btn2 = Button(
+            top,
+            text = "[      seller      ]",
+            font = ("Times new roman", 16),
+            relief = SUNKEN,
+            bg="thistle2",
+            border = 2,
+            command=buyyer ,
+
+            )
+            btn2.pack(padx=  20,pady=30)
+
+            btn3 = Button(
+            top,
+            text = "[check the price]",
+            font = ("Times new roman", 16),
+            relief = SUNKEN,
+        #background="light cyan",
+            bg="thistle2",
+            border = 2,
+            command= check_the_price,
+  
+            )
+            btn3.pack(padx=  20,pady=30)
+        
+            btnplus = Button(
+            top,
+            text = "[      ohter      ]",
+            font = ("Times new roman", 16),
+            relief = SUNKEN,
+            border = 2,
+        #background="light cyan",
+            bg="thistle2",
+   
+            )
+            btnplus.pack(padx=  20,pady=30)
+
+        # buttons for frame 2
+
+       
+
+            btn5 = Button(
+            top,
+            text = "[  registration  ]",
+            bg="thistle2",
+            font = ("Times new roman", 16),
+        #background="light cyan",
+            relief = SUNKEN,
+            command=Register,
+            border = 2,)
+            btn5.pack(padx=  20,pady=30)
+
+        
+        #btn6 = Button(
+        #top,
+        #text = "6           .",
+        #bg="thistle2",
+       # font = ("Times new roman", 12),
+       # relief = SUNKEN,
+        #background="light cyan",
+        #border = 2,
+        
+       # )
+       # btn6.pack(padx=0,pady=8)
+        
+
+            button2 = Button(top,text="[       exist         ]",command=top.destroy,bg="thistle2",relief = SUNKEN)
+            button2.pack(padx=  20,pady=30)
+            photo1=PhotoImage(file=r"C:\\Users\\mahesh computer\\Desktop\\kisaan010.png")
+
+ 
+            namelabel=Label(top,text=' dfgf  ',image=photo1).pack()
+           
+            top.geometry("1250x850")
+        #top.configure(background="light cyan")
+        #top.bind('<Alt-b>',ddd)
+        #top.bind('<Alt-s>',seller)
+        #top.bind('<Alt-c>',check_the_price)
+   
+   
+    else:
+        uname=="" or upass=="" 
+      
+        messagebox.showerror("wrong pass")
+
+        #############################registration###############
+def Register(event=""):
+
+    top = Toplevel()
+    top.title("register")
+    top.configure(background="sky blue1") 
+    top.geometry("1250x850")
+    namelabel=Label(top,text='Enter your name :',bg="sky blue1")
+    namelabel.grid(row=0,column=0)
+    namelabel.configure(foreground='Blue')
+    namelabel.configure(font=("times new roman",18,"bold"))
+
+    fathernamelabel=Label(top,text='Enter your father name :',bg="sky blue1")
+    fathernamelabel.grid(row=1,column=0)
+    fathernamelabel.configure(foreground='Blue')
+    fathernamelabel.configure(font=("times new roman",18,"bold"))
+
+    agelabel=Label(top,text='Enter your age :',bg="sky blue1")
+    agelabel.grid(row=2,column=0)
+    agelabel.configure(foreground='Blue')
+    agelabel.configure(font=("times new roman",18,"bold"))
+    
+        
+
+    
+#entrbox
+    namevar=StringVar()
+    nameentrybox=Entry(top,width=15,textvariable=namevar,bg="sky blue1")   
+    nameentrybox.grid(row=0,column=1)
+    nameentrybox.focus()
+
+    fathernamevar=StringVar()
+    fathernameentrybox=Entry(top,width=15,textvariable=fathernamevar,bg="sky blue1")
+    fathernameentrybox.grid(row=1,column=1)
+
+    agevar=StringVar()
+    ageentrybox=Entry(top,width=15,textvariable=agevar,bg="sky blue1")
+    ageentrybox.grid(row=2,column=1)
+
+
+
+
+#radio button
+    usertype=StringVar()
+    radiob1=Radiobutton(top,text='Farmer',value='student',variable=usertype,bg="light blue1")
+    radiob1.grid(row=4,column=1)
+
+    radiob2=Radiobutton(top,text='buyyer',value='teacher',variable=usertype,bg="light blue1")
+    radiob2.grid(row=4,column=0)
+
+    radiob3=Radiobutton(top,text='other',value='other',variable=usertype,bg="light blue1")
+    radiob3.grid(row=4,column=2)
+# check button
+    checkb_var=IntVar()
+    checkb=Checkbutton(top,text='i read the terms and condition of mayank  ')
+    checkb.grid(row=5,column=0)
+
+    submit_button123=Button(top,text='Register',command=action,bg="light blue1")
+    submit_button123.grid(row=6,column=2)
+    
+    
+    #top.configure(background="light cyan")
+    photo=PhotoImage(file=r"C:\\Users\\mahesh computer\\Desktop\\kisaan010.png")
+
+ 
+    #namelabel=Label(top,text=' dfgf  ',image=photo).grid(row=7,column=3)
+    #top.configure(background="light cyan")
+    
+    top.geometry("1250x850")
+  
+       
+
+
+
+
+
+###########ffffffff####################front page###################################
+
+root = Tk()
+m=Label(root,text='Welcome to Kisaan Seva Portal',font=("times new roman",28),fg="red",bg="yellow")
+m.pack(padx=0,pady=10,fill="both")
+
+m=Label(root,text=' login ',font=("times new roman",18,"bold"),fg="red",bg="light blue1")
+m.pack(padx=0,pady=15)
+
+m=Label(root,text='user name',font=("times new roman",15,"bold"),fg="green",bg="light blue1")
+m.pack(fill="both")
+root.geometry("1250x850")
+namevar=StringVar()
+nameentrybox=Entry(root,width=33,textvariable=namevar,fg="green",bg="gray85")
+nameentrybox.pack()
+nameentrybox.focus()
+
+#def jj (event=""):
+m=Label(root,text='password',font=("times new roman",15,"bold"),fg="green",bg="light blue1")
+m.pack(fill="both")
+
+passvar = StringVar()
+passentrybox=Entry(root,width=33,textvariable=passvar,bg="gray85")
+passentrybox.pack()
+
+
+
+submit_button12=Button(root,text='[  Register   ]',command=Register,bg="thistle2",cursor='star',relief = SUNKEN)
+submit_button12.pack(padx=0,pady=5)
+root.geometry("1250x850")
+
+submit_button=Button(root,text='  [ submit form ]',command=action, bg="thistle2",cursor='circle',relief = SUNKEN)
+submit_button.pack(padx=0,pady=5)
+submit_button1=Button(root,text=' [   exit      ]',command=root.destroy,bg="thistle2",cursor='heart',relief = SUNKEN)
+submit_button1.pack(padx=0,pady=5)
+root.geometry("1250x850")
+############################key bind###################
+#root.bind('<Return>',jj)
+root.bind('<Return>',action)
+root.bind('<Alt-r>',Register)
+#root.bind('<Alt-b>',buyyer)
+root.bind('<Alt-s>',seller)
+root.bind('<Alt-c>',check_the_price)
+m=Label(root,text='',font=("times new roman",15,"bold"),fg="blue",bg="light blue1")
+m.pack(fill="both")
+
+###################################phto#######################
+
+photo=PhotoImage(file=r"C:\\Users\\mahesh computer\\Desktop\\kisaan12.png")
+
+ 
+#namelabel=Label(root,text='Enter your name :',image=photo).pack(padx=0,pady=15)
+submit_button123=Button(root,text='Register',image=photo,command=mayank).pack(padx=0,pady=15)
+
+m=Label(root,text='By-- B.Tech(IT),4th sem,  ',font=("times new roman",12,"bold"),fg="red",bg="light blue1")
+m.pack(side="bottom",padx=0,pady=5)
+
+##################################menubar##################
+menubar=Menu(root)
+m1=Menu(menubar)
+m2=Menu(menubar)
+m1.add_command(label='ddd',command=ddd)
+m1.add_command(label='details',command=details)
+m1.add_command(label='check_the_price',command=check_the_price)
+m1.add_command(label='Register',command=Register)
+m1.add_command(label='buyyer',command=buyyer)
+m1.add_command(label='seller',command=seller)
+m2.add_command(label='no.mayank.--9589274762')
+#enubar.configre(background="light blue1")
+#filemenu=Menu(menubar,tearoff=0)
+#filemenu.add_command(label='8888-8888')
+##########################main menu baar################
+menubar.add_cascade(label="Home Page",menu=m1)
+menubar.add_cascade(label="customer care",menu=m2)
+
+root.config(menu=menubar)
+################## color #################
+root.configure(background="light blue1")
+root.geometry("1250x850")
+root.mainloop()
+
